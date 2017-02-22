@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>DevOps Topologies</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,300,400italic,700,900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<link rel="apple-touch-icon" sizes="57x57" href="/icons/apple-touch-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="/icons/apple-touch-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/icons/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="/icons/apple-touch-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="/icons/apple-touch-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="/icons/apple-touch-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="/icons/apple-touch-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="/icons/apple-touch-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon-180x180.png">
+	<link rel="icon" type="image/png" href="/icons/favicon-32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="/icons/favicon-194x194.png" sizes="194x194">
+	<link rel="icon" type="image/png" href="/icons/favicon-96x96.png" sizes="96x96">
+	<link rel="icon" type="image/png" href="/icons/android-chrome-192x192.png" sizes="192x192">
+	<link rel="icon" type="image/png" href="/icons/favicon-16x16.png" sizes="16x16">
+	<link rel="manifest" href="/icons/manifest.json">
+	<link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#5bbad5">
+	<link rel="shortcut icon" href="/icons/favicon.ico">
+	<meta name="apple-mobile-web-app-title" content="Skelton Thatcher">
+	<meta name="application-name" content="Skelton Thatcher">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="msapplication-TileImage" content="/icons/mstile-144x144.png">
+	<meta name="msapplication-config" content="/icons/browserconfig.xml">
+	<meta name="theme-color" content="#ffffff">
+	<meta property="og:title" content="DevOps Topologies" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="http://web.devopstopologies.com" />
+	<meta property="og:image" content="http://web.devopstopologies.com/images/type-1.png" />
+	<meta property="og:description" content="The primary goal of any DevOps setup within an organisation is to improve the delivery of value for customers and the business, not in itself to reduce costs, increase automation, or drive everything from configuration management; this means that different organisations might need different team structures in order for effective Dev and Ops collaboration to take place." />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+    
+    <body> 
+    <div id="content">    
+        
+    <div id="anti-types" class="full-width-section dark" style="background:url(images/bg-orange.jpg);">
+        <div class="container">
+            <h2><strong>DevOps</strong> Anti-Types</h2>
+            
+            <div class="sub-heading">
+            <p>It’s useful to look at some bad practices, what
+we might call ‘anti-types’ (after the ubiquitous ‘anti-pattern‘).</p>
+            </div>
+        </div>
+    </div>
+        
+    <div class="sub-nav" style="background-color:#e95234;">
+        <div class="container">
+        <ul>
+        <!--li><strong>Anti-Type</strong></li-->
+        <li><a href="#anti-type-a">A: Dev vs Ops</a></li>  
+        <li><a href="#anti-type-b">B: DevOps Silo</a></li>  
+        <li><a href="#anti-type-c">C: No Ops Needed</a></li>  
+        <li><a href="#anti-type-d">D: Tools Team</a></li>  
+        <li><a href="#anti-type-e">E: SysAdmin</a></li>  
+        <li><a href="#anti-type-f">F: Embedded Ops</a></li>  
+        <li><a href="#anti-type-g">G: Dev vs DBA</a></li>  
+        </ul>
+        </div>
+    </div>
+        
+    <div class="full-width-section anti-types">
+        <div class="container">
+        <div id="anti-type-a" class="row">    
+        <div class="col-1-2">
+            <h5><strong>Anti-Type A:</strong> Dev and Ops Silos</h5>
+
+            <p>This is the classic ‘throw it over the wall’ split between Dev and Ops. It means that story points can be claimed early (DONE means ‘feature-complete’, but not working in Production), and software operability suffers because Devs do not have enough context for operational features and Ops folks do not have time or inclination to engage Devs in order to fix the problems before the software goes live.</p>
+
+            <p>We likely all know this topology is bad, but I think there are actually worse topologies; at least with Anti-Type A (Dev and Ops Silos), we know there is a problem.</p>
+        </div>
+            
+        <div class="col-1-2">
+            <div class="spacer"></div>
+            <img src="images/anti-type-a.png" alt="Anti-Type A"/>
+        </div>
+        </div>    
+            
+        <div id="anti-type-b" class="row">
+        <div class="col-1-2 hidden-mobile">
+            <div class="spacer"></div>
+            <img src="images/anti-type-b.png" alt="Anti-Type B" class=""/>
+        </div>
+            
+        <div class="col-1-2">
+            <h5><strong>Anti-Type B:</strong> DevOps Team Silo</h5>
+
+            <p>The DevOps Team Silo (Anti-Type B) typically results from a manager or exec deciding that they “need a bit of this DevOps thing” and starting a ‘DevOps team’ (probably full of people known as ‘a DevOp‘). The members of the DevOps team quickly form another silo, keeping Dev and Ops further apart than ever as they defend their corner, skills, and toolset from the ‘clueless Devs’ and ‘dinosaur Ops’ people.</p>
+
+            <p>The only situation where a separate DevOps silo really makes sense is when the team is temporary, lasting less than (say) 12 or 18 months, with the express purpose of bringing Dev and Ops closer together, and with a clear mandate to make the DevOps team superfluous after that time; this becomes what I have called a <a href="#type-five">Type 5 DevOps Topology</a>.</p>
+        </div>
+            
+        <div class="col-1-2 hidden-desktop">
+            <div class="spacer"></div>
+            <img src="images/anti-type-b.png" alt="Anti-Type B" class=""/>
+        </div>
+        </div>    
+        
+        <div id="anti-type-c" class="row">
+        <div class="col-1-2">
+            <h5><strong>Anti-Type C:</strong> Dev Don't Need Ops</h5>
+
+            <p>This topology is borne of a combination of naivety and arrogance from developers and development managers, particularly when starting on new projects or systems. Assuming that Ops is now a thing of the past (“we have the Cloud now, right?”), the developers wildly underestimate the complexity and importance of operational skills and activities, and believe that they can do without them, or just cover them in spare hours.</p>
+
+            <p>Such an Anti-Type C DevOps topology will probably end up needing either a <a href="#type-three">Type 3 (Ops as IaaS)</a> or a <a href="#type-four">Type 4 (DevOps-as-a-Service)</a> topology when their software becomes more involved and operational activities start to swamp ‘development’ (aka coding) time. If only such teams recognised the importance of Operations as a discipline as important and valuable as software development, they would be able to avoid much pain and unnecessary (and quite basic) operational mistakes.</p>
+        </div>
+            
+        <div class="col-1-2">
+            <div class="spacer"></div>
+            <img src="images/anti-type-c.png" alt="Anti-Type C"/>
+        </div>
+        </div>
+            
+        <div id="anti-type-d" class="row">    
+        <div class="col-1-2 hidden-mobile">
+            <div class="spacer"></div>
+            <img src="images/anti-type-d.png" alt="Anti-Type D"/>
+        </div>
+            
+        <div class="col-1-2">
+            <h5><strong>Anti-Type D:</strong> DevOps as Tools Team</h5>
+
+            <p>In order to "become DevOps" without losing current dev teams velocity (read delivery of functional stories), a DevOps team is set up to work on the tooling required for deployment pipelines, configuration management, environment management, etc. Meanwhile Ops folks continue to work in isolation and Dev teams continue to throw them applications "over the wall".</p>
+
+            <p>Although the outcomes of this dedicated team can be beneficial in terms of an improved tool chain, its impact is limited. The fundamental problem of lack of early Ops involvement and collaboration in the application development lifecycle remains unchanged.</p>
+        </div>
+            
+        <div class="col-1-2 hidden-desktop">
+            <div class="spacer"></div>
+            <img src="images/anti-type-d.png" alt="Anti-Type D"/>
+        </div>
+        </div>    
+            
+        <div id="anti-type-e" class="row">    
+        <div class="col-1-2">
+            <h5><strong>Anti-Type E:</strong> Rebranded SysAdmin</h5>
+
+            <p>This anti-type is typical in organizations with low engineering maturity. They want to improve their practices and reduce costs, yet they fail to see IT as a core driver of the business. Because industry successes with DevOps are now evident, they want to "do DevOps" as well. Unfortunately, instead of reflecting on the gaps in the current structure and relationships, they take the elusive path of hiring "DevOps engineers" for their Ops team(s).</p>
+
+            <p>DevOps becomes just a rebranding of the role previously known as SysAdmin, with no real cultural/organizational change taking place. This anti-type is becoming more and more widespread as unscrupulous recruiters jump on the bandwagon searching for candidates with automation and tooling skills. Unfortunately, it's the human communication skills that can make DevOps thrive in an organization.</p>
+        </div>
+            
+        <div class="col-1-2">
+            <div class="spacer"></div>
+            <img src="images/anti-type-e.png" alt="Anti-Type E"/>
+        </div>
+        </div>     
+        
+        <div id="anti-type-f" class="row">
+        <div class="col-1-2 hidden-mobile">
+            <div class="spacer"></div>
+            <img src="images/anti-type-f.png" alt="Anti-Type F"/>
+            <div class="thanks-link">Thanks to Matt Franz
+<a target="_blank" href="http://twitter.com/seclectech">(@seclectech)</a></div>
+        </div>
+            
+        <div class="col-1-2">
+            <h5><strong>Anti-Type F:</strong> Ops Embedded in Dev Team</h5>
+
+            <p>The organization does not want to keep a separate Ops team, so development teams take responsibility for infrastructure, managing environments, monitoring, etc. However, doing so in a project or product-driven way means those items are subject to resource constraints and re-prioritizations which lead to subpar approaches and half-baked solutions.</p>
+
+            <p>In this anti-type the organization shows lack of appreciation for the importance and skills required for effective IT operations.</p>
+        </div>
+            
+        <div class="col-1-2 hidden-desktop">
+            <div class="spacer"></div>
+            <img src="images/anti-type-f.png" alt="Anti-Type F"/>
+            <div class="thanks-link">Thanks to Matt Franz
+<a target="_blank" href="http://twitter.com/seclectech">(@seclectech)</a></div>
+        </div>
+        </div>    
+            
+        <div id="anti-type-g" class="row">
+        <div class="col-1-2">
+            <h5><strong>Anti-Type G:</strong> Dev and DBA Silos</h5>
+
+            <p>This is a form of <a href="#anti-type-a">Anti-Type A (Dev and Ops Silos)</a> which is prominent in medium-to-large companies where multiple legacy systems depend on the same core set of data. Because these databases are so vital for the business, a dedicated DBA team, often under the Ops umbrella, is responsible for their maintenance, performance tuning and disaster recovery. That is understandable. The problem is when this team becomes a gate keeper for any and every database change, effectively becoming an obstacle to small and frequent deployments (a core tenet of DevOps and Continuous Delivery).</p>
+
+            <p>Furthermore, just like Ops in <a href="#anti-type-a">Anti-Type A</a>, the DBA team is not involved early in the application development, thus data problems (migrations, performance, etc) are found late in the delivery cycle. Coupled with the overload of supporting multiple applications databases, the end result is constant firefighting and mounting pressure to deliver.</p>
+        </div>
+            
+        <div class="col-1-2">
+            <div class="spacer"></div>
+            <img src="images/anti-type-g.png" alt="Anti-Type G"/>
+        </div> 
+        </div>
+                   
+        </div>
+        
+        <div class="clear"></div>
+    </div>
+        
+        <div id="team-topologies" class="full-width-section dark" style="background:url(images/bg-lt-blue.jpg);">
+        <div class="container">
+            <h2><strong>DevOps</strong> Team Topologies</h2>
+        </div>
+    </div>
+        
+    <div class="sub-nav" style="background-color:#2786af;">
+        <div class="container">
+        <ul>
+        <!--li><strong>Topologies</strong></li-->
+        <li><a href="#type-one">1: Dev+Ops</a></li>  
+        <li><a href="#type-two">2: Shared Ops</a></li>  
+        <li><a href="#type-three">3: Ops as IaaS</a></li>  
+        <li><a href="#type-four">4: DevOps-as-a-Service</a></li>
+        <li><a href="#type-five">5: Temp DevOps Team</a></li>
+        <li><a href="#type-six">6: DevOps Evangelists</a></li>
+        <li><a href="#type-seven">7: SRE Team</a></li>
+        <li><a href="#type-eight">8: Container-Driven</a></li>
+        <li><a href="#type-nine">9: DB Capability</a></li>
+        </ul>
+        </div>
+    </div>
+        
+    <div class="full-width-section topologies">
+        <div class="container">
+        <div id="type-one" class="row">
+        <div class="col-1-2">
+            <h5><strong>Type 1:</strong> Dev and Ops Collaboration</h5>
+
+            <p>This is the ‘promised land’ of DevOps: smooth collaboration between Dev teams and Ops teams, each specialising where needed, but also sharing where needed. There are likely many separate Dev teams, each working on a separate or semi-separate product stack.</p>
+
+            <p>My sense is that this Type 1 model needs quite substantial organisational change to establish it, and a good degree of competence higher up in the technical management team. Dev and Ops must have a clearly expressed and demonstrably effective shared goal (‘Delivering Reliable, Frequent Changes’, or whatever). Ops folks must be comfortable pairing with Devs and get to grips with test-driven coding and Git, and Devs must take operational features seriously and seek out Ops people for input into logging implementations, and so on, all of which needs quite a culture change from the recent past.</p>
+        </div>
+            
+        <div class="col-1-2">
+            <div class="spacer"></div>
+            <img src="images/type-1.png" alt="Type 1"/>
+            <div class="suitability high">
+                <i class="fa fa-check-circle"></i>
+                <div class="suitability-inner">
+                <p><strong>Type 1 suitability:</strong> an organisation with strong technical leadership.<br/>
+        <strong>Potential effectiveness:</strong> <strong><span>HIGH</span></strong></p>
+                </div>
+            </div>
+        </div>
+        </div>
+            
+        <div id="type-two" class="row">
+        <div class="col-1-2 hidden-mobile">
+            <div class="spacer"></div>
+            <img src="images/type-2.png" alt="Type 2"/>
+            <div class="suitability high">
+                <i class="fa fa-check-circle"></i>
+                <div class="suitability-inner">
+                <p><strong>Type 2 suitability:</strong> organisations with a single main web-based product or service.<br/>
+        <strong>Potential effectiveness:</strong> <strong><span>HIGH</span></strong></p>
+                </div>
+            </div>
+        </div>
+            
+        <div class="col-1-2">
+            <h5><strong>Type 2:</strong> Fully Shared Ops Reponsibilities</h5>
+
+            <p>Where operations people have been integrated in product development teams, we see a Type 2 topology. There is so little separation between Dev and Ops that all people are highly focused on a shared purpose; this is arguable a form of <a href="#type-one">Type 1 (Dev and Ops Collaboration)</a>, but it has some special features.</p>
+
+            <p>Organisations such as Netflix and Facebook with effectively a single web-based product have achieved this Type 2 topology, but I think it’s probably not hugely applicable outside a narrow product focus, because the budgetary constraints and context-switching typically present in an organisation with multiple product streams will probably force Dev and Ops further apart (say, back to a <a href="#type-one">Type 1 model</a>). This topology might also be called ‘NoOps‘, as there is no distinct or visible Operations team (although the Netflix NoOps might also be <a href="#type-three">Type 3 (Ops as IaaS)</a>).</p>
+        </div>
+            
+        <div class="col-1-2 hidden-desktop">
+            <div class="spacer"></div>
+            <img src="images/type-2.png" alt="Type 2"/>
+            <div class="suitability high">
+                <i class="fa fa-check-circle"></i>
+                <div class="suitability-inner">
+                <p><strong>Type 2 suitability:</strong> organisations with a single main web-based product or service.<br/>
+        <strong>Potential effectiveness:</strong> <strong><span>HIGH</span></strong></p>
+                </div>
+            </div>
+        </div>
+        </div>    
+        
+        <div id="type-three" class="row">
+        <div class="col-1-2">
+            <h5><strong>Type 3:</strong> Ops as Infrastructure-as-a-Service</h5>
+
+            <p>For organisations with a fairly traditional IT Operations department which cannot or will not change rapidly [enough], and for organisations who run all their applications in the public cloud (Amazon EC2, Rackspace, Azure, etc.), it probably helps to treat Operations as a team who simply provides the elastic infrastructure on which applications are deployed and run; the internal Ops team is thus directly equivalent to Amazon EC2, or Infrastructure-as-a-Service.</p>
+
+            <p>A team (perhaps a virtual team) within Dev then acts as a source of expertise about operational features, metrics, monitoring, server provisioning, etc., and probably does most of the communication with the IaaS team. This team is still a Dev team, however, following standard practices like TDD, CI, iterative development, coaching, etc.</p>
+
+            <p>The IaaS topology trades some potential effectiveness (losing direct collaboration with Ops people) for easier implementation, possibly deriving value more quickly than by trying for <a href="#type-one">Type 1 (Dev and Ops Collaboration)</a> which could be attempted at a later date.</p>
+        </div>
+            
+        <div class="col-1-2">
+            <div class="spacer"></div>
+            <img src="images/type-3.png" alt="Type 3"/>
+            <div class="suitability medium">
+                <i class="fa fa-check-circle"></i>
+                <div class="suitability-inner">
+                <p><strong>Type 3 suitability:</strong> organisations with several different products and services, with a traditional Ops department, or whose applications run entirely in the public cloud.<br/>
+        <strong>Potential effectiveness:</strong> <strong><span>MEDIUM</span></strong></p>
+                </div>
+            </div>
+        </div>
+        </div>
+            
+        <div id="type-four" class="row">
+        <div class="col-1-2 hidden-mobile">
+            <div class="spacer"></div>
+            <img src="images/type-4.png" alt="Type 4"/>
+            <div class="suitability medium">
+                <i class="fa fa-check-circle"></i>
+                <div class="suitability-inner">
+                <p><strong>Type 4 suitability:</strong> smaller teams or organisations with limited experience of operational issues.<br/>
+        <strong>Potential effectiveness:</strong> <strong><span>MEDIUM</span></strong></p>
+                </div>
+            </div>
+        </div>
+            
+        <div class="col-1-2">
+            <h5><strong>Type 4:</strong> DevOps as an External Service</h5>
+
+            <p>Some organisations, particularly smaller ones, might not have the finances, experience, or staff to take a lead on the operational aspects of the software they produce. The Dev team might then reach out to a service provider like Rackspace to help them build test environments and automate their infrastructure and monitoring, and advise them on the kinds of operational features to implement during the software development cycles.</p>
+
+            <p>What might be called DevOps-as-a-Service could be a useful and pragmatic way for a small organisation or team to learn about automation, monitoring, and configuration management, and then perhaps move towards a <a href="#type-three">Type 3 (Ops as IaaS)</a> or even  <a href="#type-one">Type 1 (Dev and Ops Collaboration)</a> model as they grow and take on more staff with operational focus.</p>
+        </div>
+            
+        <div class="col-1-2 hidden-desktop">
+            <div class="spacer"></div>
+            <img src="images/type-4.png" alt="Type 4"/>
+            <div class="suitability medium">
+                <i class="fa fa-check-circle"></i>
+                <div class="suitability-inner">
+                <p><strong>Type 4 suitability:</strong> smaller teams or organisations with limited experience of operational issues.<br/>
+        <strong>Potential effectiveness:</strong> <strong><span>MEDIUM</span></strong></p>
+                </div>
+            </div>
+        </div>
+        </div>    
+        
+        <div id="type-five" class="row">
+        <div class="col-1-2">
+            <h5><strong>Type 5:</strong> DevOps Team with an Expiry Date</h5>
+
+            <p>The DevOps Team with an Expiry Date (Type 5) looks substantially like <a href="#anti-type-b">Anti-Type B (DevOps Team Silo)</a>, but its intent and longevity are quite different. This temporary team has a mission to bring Dev and Ops closer together, ideally towards a <a href="#type-one">Type 1 (Dev and Ops Collaboration)</a> or <a href="#type-two">Type 2 (Fully Shared Ops Reponsibilities)</a> model, and eventually make itself obsolete.</p>
+
+            <p>The members of the temporary team will ‘translate’ between Dev-speak and Ops-speak, introducing crazy ideas like stand-ups and Kanban for Ops teams, and thinking about dirty details like load-balancers, management NICs, and SSL offloading for Dev teams. If enough people start to see the value of bringing Dev and Ops together, then the temporary team has a real chance of achieving its aim; crucially, long-term responsibility for deployments and production diagnostics should not be given to the temporary team, otherwise it is likely to become a <a href="#anti-type-b">DevOps Team Silo (Anti-Type B).</a></p>
+        </div>
+            
+        <div class="col-1-2">
+            <div class="spacer"></div>
+            <img src="images/type-5.png" alt="Type 5"/>
+            <div class="suitability high">
+                <i class="fa fa-check-circle"></i>
+                <div class="suitability-inner">
+                <p><strong>Type 5 suitability:</strong> as a precursor to <a href="#type-one">Type 1 topology</a>, but beware the danger of <a href="#anti-type-b">Anti-Type B</a>.<br/>
+        <strong>Potential effectiveness:</strong> <strong><span>LOW to HIGH</span></strong></p>
+                </div>
+            </div>
+        </div>
+        </div>
+            
+        <div id="type-six" class="row">
+        <div class="col-1-2 hidden-mobile">
+            <div class="spacer"></div>
+            <img src="images/type-6.png" alt="Type 6"/>
+            <div class="thanks-link">Thanks to Eric Minick
+<a target="_blank" href="https://twitter.com/ericminick">(@EricMinick)</a></div>
+            <div class="suitability medium">
+                <i class="fa fa-check-circle"></i>
+                <div class="suitability-inner">
+                <p><strong>Type 6 suitability:</strong> organisations with a tendency for Dev and Ops to drift apart. Beware the danger of <a href="#anti-type-b">Anti-Type B.</a><br/>
+        <strong>Potential effectiveness:</strong> <strong><span>MEDIUM to HIGH</span></strong></p>
+                </div>
+            </div>
+        </div>
+            
+        <div class="col-1-2">
+            <h5><strong>Type 6:</strong> DevOps Evangelists Team</h5>
+
+            <p>Within organisations that have a large gap between Dev and Ops (or the tendency towards a large gap), it can be effective to have a 'facilitating' DevOps team that keeps the Dev and Ops sides talking. This is a version of <a href="#type-five">Type 5 (DevOps Team with an Expiry Date)</a> but where the DevOps team exists on an ongoing basis with the specific remit of facilitating collaboration and cooperation between Dev and Ops teams. Members of this team are sometimes called 'DevOps Evangelists', because they help to spread awareness of DevOps practices.</p>
+            
+            <div class="tweet"><p><a href="https://twitter.com/ericminick/status/517335119330172930">The goal for a "DevOps Team" should be to put itself out of business by enabling the rest of the org.</a></p>
+            <div class="tweet-author"><i class="fa fa-twitter"></i><a href="https://twitter.com/ericminick">EricMinick</a></div>
+                <div class="clear"></div>
+            </div>
+        </div>
+            
+        <div class="col-1-2 hidden-desktop">
+            <div class="spacer"></div>
+            <img src="images/type-6.png" alt="Type 6"/>
+            <div class="thanks-link">Thanks to Eric Minick
+<a target="_blank" href="https://twitter.com/ericminick">(@EricMinick)</a></div>
+            <div class="suitability medium">
+                <i class="fa fa-check-circle"></i>
+                <div class="suitability-inner">
+                <p><strong>Type 6 suitability:</strong> organisations with a tendency for Dev and Ops to drift apart. Beware the danger of <a href="#anti-type-b">Anti-Type B</a>.<br/>
+        <strong>Potential effectiveness:</strong> <strong><span>MEDIUM to HIGH</span></strong></p>
+                </div>
+            </div>
+        </div>
+        </div>    
+        
+        <div id="type-seven" class="row">
+        <div class="col-1-2">
+            <h5><strong>Type 7:</strong> SRE Team (Google Model)</h5>
+
+            <p>DevOps often recommends that Dev teams join the on-call rotation, but it's not essential. In fact, some organisations (including Google) run a different model, with an explicit 'hand-off' from Development to the team that runs the software, the Site Reliability Engineering (SRE) team. In this model, the Dev teams need to provide test evidence (logs, metrics, etc.) to the SRE team showing that their software is of a good enough standard to be supported by the SRE team.</p>
+
+            <p>Crucially, the SRE team can reject software that is operationally substandard, asking the Developers to improve the code before it is put into Production. Collaboration between Dev and SRE happens around operational criteria but once the SRE team is happy with the code, they (and not the Dev team) support it in Production.</p>
+        </div>
+            
+        <div class="col-1-2">
+            <div class="spacer"></div>
+            <img src="images/type-7.png" alt="Type 7"/>
+                        <div class="thanks-link">Thanks to Kevin Hinde
+<a target="_blank" href="https://twitter.com/kwdhinde">(@kwdhinde)</a></div>
+            <div class="suitability high">
+                <i class="fa fa-check-circle"></i>
+                <div class="suitability-inner">
+                <p><strong>Type 7 suitability:</strong> Type 7 is suitable only for organisations with a high degree of engineering and organisational maturity. Beware of a return to <a href="#anti-type-a">Anti-Type A</a> if the SRE/Ops team is told to "JFDI" deploy.<br/>
+        <strong>Potential effectiveness:</strong> <strong><span>LOW to HIGH</span></strong></p>
+                </div>
+            </div>
+        </div>
+        </div>
+            
+        <div id="type-eight" class="row">
+        <div class="col-1-2 hidden-mobile">
+            <div class="spacer"></div>
+            <img src="images/type-8.png" alt="Type 8"/>
+            <div class="thanks-link">Thanks to J Buchanan
+                <a target="_blank" href="https://twitter.com/jascbu">(@jascbu)</a>
+            </div>
+            <div class="suitability medium">
+                <i class="fa fa-check-circle"></i>
+                <div class="suitability-inner">
+                <p><strong>Type 8 suitability:</strong> Containers can work very well, but beware <a href="#anti-type-a">Anti-Type A</a>, where the Ops team is expected to run anything that Dev throws at it.<br/>
+        <strong>Potential effectiveness:</strong> <strong><span>MEDIUM to HIGH</span></strong></p>
+                </div>
+            </div>
+        </div>
+            
+        <div class="col-1-2">
+            <h5><strong>Type 8:</strong> Container-Driven Collaboration</h5>
+
+            <p>Containers remove the need for some kinds of collaboration between Dev and Ops by encapsulating the deployment and runtime requirements of an app into a container. In this way, the container acts as a boundary on the responsibilities of both Dev and Ops. With a sound engineering culture, the Container-Driven Collaboration model works well, but if Dev starts to ignore operational considerations this model can revert towards to an adversarial 'us and them'.</p>
+        </div>
+            
+        <div class="col-1-2 hidden-desktop">
+            <div class="spacer"></div>
+            <img src="images/type-8.png" alt="Type 8"/>
+            <div class="thanks-link">Thanks to J Buchanan<a target="_blank" href="https://twitter.com/jascbu">(@jascbu)</a>
+            </div>
+            <div class="suitability medium">
+                <i class="fa fa-check-circle"></i>
+                <div class="suitability-inner">
+                <p><strong>Type 8 suitability:</strong> Containers can work very well, but beware <a href="#anti-type-a">Anti-Type A</a>, where the Ops team is expected to run anything that Dev throws at it.<br/>
+        <strong>Potential effectiveness:</strong> <strong><span>MEDIUM to HIGH</span></strong></p>
+                </div>
+            </div>
+        </div>
+        </div>    
+        
+        <div id="type-nine" class="row">
+        <div class="col-1-2">
+            <h5><strong>Type 9:</strong> Dev and DBA Collaboration</h5>
+
+            <p>In order to bridge the Dev-DBA chasm, some organisations have experimented with something like Type 9, where a database capability from the DBA team is complimented with a database capability (or specialism) from the Dev team. This seems to help to translate between the Dev-centric view of databases (as essentially dumb persistence stores for apps) and the DBA-centric view of databases (smart, rich sources of business value).</p>
+        </div>
+            
+        <div class="col-1-2">
+            <div class="spacer"></div>
+            <img src="images/type-9.png" alt="Type 9"/>
+            <div class="suitability medium">
+                <i class="fa fa-check-circle"></i>
+                <div class="suitability-inner">
+                <p><strong>Type 9 suitability:</strong> for organisations with one or more large, central databases with multiple connected applications.<br/>
+        <strong>Potential effectiveness:</strong> <strong><span>MEDIUM</span></strong></p>
+                </div>
+            </div>
+        </div>
+        </div>
+            
+        
+    </div>
+    </div>
+    </div>
+        
+    <script>
+    $(function() {
+      $('a[href*=#]:not([href=#])').click(function() {
+        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+          var target = $(this.hash);
+          target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+          if (target.length) {
+            $('html,body').animate({
+              scrollTop: target.offset().top - 65
+            }, 600);
+            return false;
+          }
+        }
+      });
+    });
+        
+    $(window).on("scroll", function() {
+    if ($(this).scrollTop() > 100) {
+       $(".header-fixed").css("background","#0b131f");
+    }
+    else {
+       $(".header-fixed").css("background","");
+    }
+ });
+        
+        $(document).ready(function(){
+    $(".close").click(function(){
+        $(".author-message").fadeOut()
+    });
+});
+        
+        jQuery(function($){
+        var redirect = false;
+        var seeShift = localStorage.neveragain;
+            console.log(seeShift);
+                
+        if(seeShift == undefined)
+          {             
+                    $('.author-message').css('display', 'block');
+                    //set storage          
+                    $('.close').click(function(){
+                         localStorage.neveragain = "true";
+                         $('.author-message').fadeOut('fast');
+                        });
+
+                  
+            }                      
+
+        });
+
+    </script>
+
+    <script>
+        /**
+          https://disqus.com/admin/universalcode/#configuration-variables
+        **/
+
+        var disqus_config = function () {
+        this.page.url = 'http://web.devopstopologies.com/'; // canonical URL variable
+        this.page.identifier = 'W9sb2d5CBdX'; // unique identifier variable
+        };
+
+        (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document, s = d.createElement('script');
+
+            s.src = '//devopstopologies.disqus.com/embed.js';
+
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+    </script>
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-51983538-3', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+    <script id="dsq-count-scr" src="//devopstopologies.disqus.com/count.js" async>
+    </script>
+
+    </body>
+</html>
